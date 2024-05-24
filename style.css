@@ -3,6 +3,8 @@
     --cinza-secundario:#c0c0c0; 
     --botao-azul: #167bf7;
     --cor-de-fundo: #00030c;
+    --rosa-novo:#de4371;
+    --amarelo-feliz:#ffff00;
 }
 *{
     margin: 0;
@@ -14,9 +16,17 @@ body{
 }
 .principal{
     background-image: url(img/Background.png);
-    background-repeat: no-repeat;
+    background-repeat: calc();
     background-size: contain;
 }
 .conteiner{
-    height:100% vh;
+    height:100vh;
+    display: grid;
+}
+.conteiner-botao{
+    background-color: var(--rosa-novo);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
 }
