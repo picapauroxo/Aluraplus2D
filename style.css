@@ -20,6 +20,8 @@ body{
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 .container{
     height: 100vh;
@@ -48,8 +50,31 @@ body{
     font-weight: 700;
 }
 .container-imagem{
-margin: 1em 0 2em 0;
+    margin: 1em 0 2em 0;
 }
 .container-caixa{
-margin: 0 6em;
+    margin: 0 6em;
+}
+.imagem-secundaria{
+    width: 80%;
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao-titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao-texto{
+    color: var(--cinza-secundario);
+}
+.secundario-botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+.container-descricao{
+    padding: 2em;
 }
