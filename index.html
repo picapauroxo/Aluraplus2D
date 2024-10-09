@@ -4,47 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Alura Books</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Alura Plus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section class="container principal">
-        <div class="container-caixa">
-            <h1 class="container-titulo">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1>
-            <img src="./img/Combo.png" alt="O combo Alura Plus" class="container-imagem">
-            <a href="www.alura.com.br" class="container-botao">Assine por 12x de R$120,00*</a>
-            <a href="www.alura.com.br" class="container-botao botao-secundario">Assinar somente o Alura+</a>
-            <p class="container-aviso">*O preço pode variar caso a assinatura seja feita em outros planos.</p>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container-botao">
+            <label for="menu">
+                <span class="cabecalho-menu-hamburguer container-imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu-titulo">Categorias</li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Programação</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Front-End</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Business</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Design & UX</a>
+                </li>
+            </ul>
+            <img src="img/Logo.png" alt="Logo da AluraBooks">
         </div>
-    </section>
-    <section class="container secundario">
-        <img src="./img/Pixel.png" alt="Um monitor com AluraPlus aberto"
-        class="imagem-secundaria">
-        <div class="container-descricao">
-            <h2 class="descricao-titulo">Assista do seu jeito</h2>
-            <p class="descricao-texto">Aproveite a tela grande da TV
-            ou assista no tablet, laptop, celular e outros aparelhos.
-            Nossa seleção de cursos não para de crescer.</p>
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.png" alt="Meus favoritos" class="container-imagem"></a>
+            <a href="#"><img src="img/Sacola.png" alt="Carrinho de compras" class="container-imagem"></a>
+            <a href="#"><img src="img/Perfil.png" alt="Meu perfil" class="container-imagem"></a>
         </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner-titulo">Já sabe por onde vai começar?</h2>
+        <p class="banner-texto">Encontre em nossa estante o que precisa!</p>
+        <input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
-    <section class="container secundario">
-        <div class="container-descricao">
-            <p class="descricao-texto">Só o Combo+ oferce Alura+ e Alura língua juntos para você ter acesso e curso de diversas áreas da tecnologia e aprender ingles ou espanhol, onde e como quiser.</p>
-            <a href="www.alura.com.br" class="container-botao secundario-botao"> Assine o Combo+</a>
-        </div>
-        <img src="./img/Telas.png" alt="Tela da AluraPlus" class="imagem-secundaria">
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Novos lançamentos</h2>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
     </section>
-    <section class="container secundario">
-        <img src="./img/Notebook.png" alt="Notebook com Alura">
-        <div class="container-descricao">
-            <h2 class="descricao-titulo">Baixe seus cursos</h2>
-            <p class="descricao-texto">Baixe e assista quando e onde quiser. Assim seus favoritos estão sempre com você, até mesmo sem internet.</p>
-        </div>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
